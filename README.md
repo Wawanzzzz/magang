@@ -1,0 +1,2 @@
+# magang
+OCR_KTP
