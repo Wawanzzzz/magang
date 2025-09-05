@@ -1,0 +1,136 @@
+OCR Results for: ktp.png
+Processed at: 2025-09-02 14:09:21
+==================================================
+
+[1] Text: 'PROVINSI KALIMANTAN TIMUR'
+    Confidence: 0.96
+    BBox: [[np.int32(358), np.int32(12)], [np.int32(982), np.int32(12)], [np.int32(982), np.int32(60)], [np.int32(358), np.int32(60)]]
+
+[2] Text: 'KOTA SAMARINDA'
+    Confidence: 0.92
+    BBox: [[np.int32(481), np.int32(56)], [np.int32(857), np.int32(56)], [np.int32(857), np.int32(101)], [np.int32(481), np.int32(101)]]
+
+[3] Text: 'NIK'
+    Confidence: 0.98
+    BBox: [[np.int32(34), np.int32(116)], [np.int32(148), np.int32(116)], [np.int32(148), np.int32(166)], [np.int32(34), np.int32(166)]]
+
+[4] Text: '6472051012040006'
+    Confidence: 0.88
+    BBox: [[np.int32(330), np.int32(118)], [np.int32(883), np.int32(118)], [np.int32(883), np.int32(168)], [np.int32(330), np.int32(168)]]
+
+[5] Text: 'Nama'
+    Confidence: 0.89
+    BBox: [[np.int32(30), np.int32(198)], [np.int32(126), np.int32(198)], [np.int32(126), np.int32(228)], [np.int32(30), np.int32(228)]]
+
+[6] Text: 'MUHAMMAD KURNIAWAN PRASETYA'
+    Confidence: 0.86
+    BBox: [[np.int32(322), np.int32(196)], [np.int32(888), np.int32(196)], [np.int32(888), np.int32(228)], [np.int32(322), np.int32(228)]]
+
+[7] Text: 'TempatTgl Lahır'
+    Confidence: 0.80
+    BBox: [[np.int32(33), np.int32(231)], [np.int32(287), np.int32(231)], [np.int32(287), np.int32(267)], [np.int32(33), np.int32(267)]]
+
+[8] Text: 'SAMARINDA,10-12-2004'
+    Confidence: 0.92
+    BBox: [[np.int32(320), np.int32(227)], [np.int32(687), np.int32(227)], [np.int32(687), np.int32(265)], [np.int32(320), np.int32(265)]]
+
+[9] Text: 'JenıS kelamin'
+    Confidence: 0.75
+    BBox: [[np.int32(30), np.int32(269)], [np.int32(236), np.int32(269)], [np.int32(236), np.int32(300)], [np.int32(30), np.int32(300)]]
+
+[10] Text: 'EAKI-LAKI'
+    Confidence: 0.78
+    BBox: [[np.int32(318), np.int32(268)], [np.int32(474), np.int32(268)], [np.int32(474), np.int32(300)], [np.int32(318), np.int32(300)]]
+
+[11] Text: 'GolDarab'
+    Confidence: 0.75
+    BBox: [[np.int32(646), np.int32(270)], [np.int32(802), np.int32(270)], [np.int32(802), np.int32(302)], [np.int32(646), np.int32(302)]]
+
+[12] Text: 'AB'
+    Confidence: 0.99
+    BBox: [[np.int32(838), np.int32(270)], [np.int32(886), np.int32(270)], [np.int32(886), np.int32(300)], [np.int32(838), np.int32(300)]]
+
+[13] Text: 'Alamal'
+    Confidence: 1.00
+    BBox: [[np.int32(30), np.int32(305)], [np.int32(151), np.int32(305)], [np.int32(151), np.int32(335)], [np.int32(30), np.int32(335)]]
+
+[14] Text: 'JLBAYAM {EH497'
+    Confidence: 0.22
+    BBox: [[np.int32(318), np.int32(304)], [np.int32(594), np.int32(304)], [np.int32(594), np.int32(336)], [np.int32(318), np.int32(336)]]
+
+[15] Text: 'RTRW'
+    Confidence: 0.86
+    BBox: [[np.int32(105), np.int32(339)], [np.int32(223), np.int32(339)], [np.int32(223), np.int32(375)], [np.int32(105), np.int32(375)]]
+
+[16] Text: '047000'
+    Confidence: 0.69
+    BBox: [[np.int32(317), np.int32(339)], [np.int32(445), np.int32(339)], [np.int32(445), np.int32(375)], [np.int32(317), np.int32(375)]]
+
+[17] Text: 'Kel/Desa'
+    Confidence: 0.78
+    BBox: [[np.int32(108), np.int32(380)], [np.int32(246), np.int32(380)], [np.int32(246), np.int32(412)], [np.int32(108), np.int32(412)]]
+
+[18] Text: 'SEMFAJATIMOR'
+    Confidence: 0.38
+    BBox: [[np.int32(317), np.int32(374)], [np.int32(582), np.int32(374)], [np.int32(582), np.int32(414)], [np.int32(317), np.int32(414)]]
+
+[19] Text: 'Kecamalan'
+    Confidence: 0.81
+    BBox: [[np.int32(104), np.int32(414)], [np.int32(281), np.int32(414)], [np.int32(281), np.int32(453)], [np.int32(104), np.int32(453)]]
+
+[20] Text: 'SAMARINDA UTARA'
+    Confidence: 0.62
+    BBox: [[np.int32(315), np.int32(413)], [np.int32(625), np.int32(413)], [np.int32(625), np.int32(449)], [np.int32(315), np.int32(449)]]
+
+[21] Text: 'Agama'
+    Confidence: 1.00
+    BBox: [[np.int32(21), np.int32(452)], [np.int32(136), np.int32(452)], [np.int32(136), np.int32(494)], [np.int32(21), np.int32(494)]]
+
+[22] Text: 'ISEAM'
+    Confidence: 0.92
+    BBox: [[np.int32(311), np.int32(452)], [np.int32(417), np.int32(452)], [np.int32(417), np.int32(484)], [np.int32(311), np.int32(484)]]
+
+[23] Text: 'Slalus Perkawinan BELUMKAWIN'
+    Confidence: 0.99
+    BBox: [[np.int32(23), np.int32(488)], [np.int32(541), np.int32(488)], [np.int32(541), np.int32(524)], [np.int32(23), np.int32(524)]]
+
+[24] Text: 'Pekerjaan'
+    Confidence: 0.99
+    BBox: [[np.int32(22), np.int32(526)], [np.int32(183), np.int32(526)], [np.int32(183), np.int32(564)], [np.int32(22), np.int32(564)]]
+
+[25] Text: 'PELAJARIMAHASISWA'
+    Confidence: 0.77
+    BBox: [[np.int32(315), np.int32(525)], [np.int32(661), np.int32(525)], [np.int32(661), np.int32(561)], [np.int32(315), np.int32(561)]]
+
+[26] Text: 'KOTA SAMARINDA'
+    Confidence: 1.00
+    BBox: [[np.int32(955), np.int32(539)], [np.int32(1235), np.int32(539)], [np.int32(1235), np.int32(578)], [np.int32(955), np.int32(578)]]
+
+[27] Text: 'Kewarganegaraan: WNI'
+    Confidence: 0.79
+    BBox: [[np.int32(22), np.int32(562)], [np.int32(385), np.int32(562)], [np.int32(385), np.int32(604)], [np.int32(22), np.int32(604)]]
+
+[28] Text: '09-05 2022'
+    Confidence: 0.78
+    BBox: [[np.int32(1016), np.int32(584)], [np.int32(1178), np.int32(584)], [np.int32(1178), np.int32(616)], [np.int32(1016), np.int32(616)]]
+
+[29] Text: 'Berlaku Hingga'
+    Confidence: 0.96
+    BBox: [[np.int32(24), np.int32(595)], [np.int32(253), np.int32(595)], [np.int32(253), np.int32(645)], [np.int32(24), np.int32(645)]]
+
+[30] Text: 'SEUMUR- HIDUP'
+    Confidence: 0.59
+    BBox: [[np.int32(313), np.int32(599)], [np.int32(563), np.int32(599)], [np.int32(563), np.int32(635)], [np.int32(313), np.int32(635)]]
+
+[31] Text: '<A'
+    Confidence: 0.38
+    BBox: [[np.float64(697.6004994817496), np.float64(533.8808990671492)], [np.float64(791.6715207059658), np.float64(505.7868537049367)], [np.float64(807.3995005182504), np.float64(564.1191009328508)], [np.float64(713.3284792940342), np.float64(593.2131462950633)]]
+
+[32] Text: 'KAR'
+    Confidence: 0.91
+    BBox: [[np.float64(769.7969409762699), np.float64(598.3172468786429)], [np.float64(918.1012714453901), np.float64(539.2065639004524)], [np.float64(940.2030590237301), np.float64(598.6827531213571)], [np.float64(791.8987285546099), np.float64(657.7934360995476)]]
+
+[33] Text: 'Juouk'
+    Confidence: 0.23
+    BBox: [[np.float64(518.5936748921307), np.float64(719.1245793959322)], [np.float64(759.2263559382639), np.float64(609.9768046295166)], [np.float64(781.4063251078693), np.float64(678.8754206040678)], [np.float64(539.7736440617361), np.float64(787.0231953704834)]]
+

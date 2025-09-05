@@ -1,0 +1,108 @@
+OCR Results for: 1_original.jpg
+Processed at: 2025-09-02 14:08:01
+==================================================
+
+[1] Text: 'NIK'
+    Confidence: 0.98
+    BBox: [[np.int32(18), np.int32(12)], [np.int32(134), np.int32(12)], [np.int32(134), np.int32(62)], [np.int32(18), np.int32(62)]]
+
+[2] Text: '5472051012040006'
+    Confidence: 0.65
+    BBox: [[np.int32(314), np.int32(13)], [np.int32(869), np.int32(13)], [np.int32(869), np.int32(66)], [np.int32(314), np.int32(66)]]
+
+[3] Text: 'Nama'
+    Confidence: 0.92
+    BBox: [[np.int32(14), np.int32(94)], [np.int32(110), np.int32(94)], [np.int32(110), np.int32(122)], [np.int32(14), np.int32(122)]]
+
+[4] Text: 'MUHAMMAD KURNIAWAN PRASETYA'
+    Confidence: 0.71
+    BBox: [[np.int32(308), np.int32(92)], [np.int32(872), np.int32(92)], [np.int32(872), np.int32(124)], [np.int32(308), np.int32(124)]]
+
+[5] Text: 'TempatTgl Lahır'
+    Confidence: 0.81
+    BBox: [[np.int32(19), np.int32(127)], [np.int32(273), np.int32(127)], [np.int32(273), np.int32(163)], [np.int32(19), np.int32(163)]]
+
+[6] Text: 'SAMARINDA, 10-12-2004'
+    Confidence: 0.59
+    BBox: [[np.int32(307), np.int32(125)], [np.int32(673), np.int32(125)], [np.int32(673), np.int32(161)], [np.int32(307), np.int32(161)]]
+
+[7] Text: 'JenıS kelamin'
+    Confidence: 0.77
+    BBox: [[np.int32(16), np.int32(165)], [np.int32(222), np.int32(165)], [np.int32(222), np.int32(196)], [np.int32(16), np.int32(196)]]
+
+[8] Text: 'EAKI-LAKI'
+    Confidence: 0.56
+    BBox: [[np.int32(306), np.int32(164)], [np.int32(460), np.int32(164)], [np.int32(460), np.int32(196)], [np.int32(306), np.int32(196)]]
+
+[9] Text: 'GolDarah'
+    Confidence: 0.69
+    BBox: [[np.int32(631), np.int32(164)], [np.int32(791), np.int32(164)], [np.int32(791), np.int32(201)], [np.int32(631), np.int32(201)]]
+
+[10] Text: 'AB'
+    Confidence: 0.98
+    BBox: [[np.int32(824), np.int32(166)], [np.int32(872), np.int32(166)], [np.int32(872), np.int32(196)], [np.int32(824), np.int32(196)]]
+
+[11] Text: 'Alamal'
+    Confidence: 1.00
+    BBox: [[np.int32(16), np.int32(202)], [np.int32(136), np.int32(202)], [np.int32(136), np.int32(232)], [np.int32(16), np.int32(232)]]
+
+[12] Text: 'JLBAYAM {EH497'
+    Confidence: 0.18
+    BBox: [[np.int32(304), np.int32(200)], [np.int32(580), np.int32(200)], [np.int32(580), np.int32(232)], [np.int32(304), np.int32(232)]]
+
+[13] Text: 'RTRW'
+    Confidence: 0.76
+    BBox: [[np.int32(91), np.int32(235)], [np.int32(211), np.int32(235)], [np.int32(211), np.int32(271)], [np.int32(91), np.int32(271)]]
+
+[14] Text: '047000'
+    Confidence: 0.63
+    BBox: [[np.int32(303), np.int32(235)], [np.int32(431), np.int32(235)], [np.int32(431), np.int32(271)], [np.int32(303), np.int32(271)]]
+
+[15] Text: 'Kel/Desa'
+    Confidence: 0.86
+    BBox: [[np.int32(92), np.int32(276)], [np.int32(232), np.int32(276)], [np.int32(232), np.int32(308)], [np.int32(92), np.int32(308)]]
+
+[16] Text: 'SEMPAJATIMUR'
+    Confidence: 0.97
+    BBox: [[np.int32(304), np.int32(274)], [np.int32(566), np.int32(274)], [np.int32(566), np.int32(306)], [np.int32(304), np.int32(306)]]
+
+[17] Text: 'Kecamalan'
+    Confidence: 0.80
+    BBox: [[np.int32(88), np.int32(310)], [np.int32(269), np.int32(310)], [np.int32(269), np.int32(349)], [np.int32(88), np.int32(349)]]
+
+[18] Text: 'SAMARINDAUTARA'
+    Confidence: 0.81
+    BBox: [[np.int32(303), np.int32(309)], [np.int32(613), np.int32(309)], [np.int32(613), np.int32(345)], [np.int32(303), np.int32(345)]]
+
+[19] Text: 'Agama'
+    Confidence: 1.00
+    BBox: [[np.int32(7), np.int32(348)], [np.int32(121), np.int32(348)], [np.int32(121), np.int32(390)], [np.int32(7), np.int32(390)]]
+
+[20] Text: 'ISEAM'
+    Confidence: 0.98
+    BBox: [[np.int32(298), np.int32(348)], [np.int32(406), np.int32(348)], [np.int32(406), np.int32(380)], [np.int32(298), np.int32(380)]]
+
+[21] Text: 'Slalus Perkawinan BELUM KAWIN'
+    Confidence: 0.79
+    BBox: [[np.int32(9), np.int32(384)], [np.int32(529), np.int32(384)], [np.int32(529), np.int32(422)], [np.int32(9), np.int32(422)]]
+
+[22] Text: 'Pekerjaan'
+    Confidence: 0.98
+    BBox: [[np.int32(8), np.int32(422)], [np.int32(169), np.int32(422)], [np.int32(169), np.int32(463)], [np.int32(8), np.int32(463)]]
+
+[23] Text: 'PELAJARIMAHASISWA'
+    Confidence: 1.00
+    BBox: [[np.int32(300), np.int32(421)], [np.int32(646), np.int32(421)], [np.int32(646), np.int32(457)], [np.int32(300), np.int32(457)]]
+
+[24] Text: 'Kewarganegaraan: WNI'
+    Confidence: 0.87
+    BBox: [[np.int32(8), np.int32(458)], [np.int32(371), np.int32(458)], [np.int32(371), np.int32(500)], [np.int32(8), np.int32(500)]]
+
+[25] Text: 'Berlaku Hingga'
+    Confidence: 0.97
+    BBox: [[np.int32(9), np.int32(494)], [np.int32(238), np.int32(494)], [np.int32(238), np.int32(539)], [np.int32(9), np.int32(539)]]
+
+[26] Text: 'SEUMUR HIDUP'
+    Confidence: 0.96
+    BBox: [[np.int32(299), np.int32(495)], [np.int32(551), np.int32(495)], [np.int32(551), np.int32(531)], [np.int32(299), np.int32(531)]]
+
