@@ -1,0 +1,12 @@
+2025-08-28 14:42:48,273 - WARNING -  * Debugger is active!
+2025-08-28 14:42:48,281 - INFO -  * Debugger PIN: 504-187-456
+2025-08-28 14:42:48,428 - INFO - 127.0.0.1 - - [28/Aug/2025 14:42:48] "GET / HTTP/1.1" 200 -
+2025-08-28 14:43:03,801 - INFO - File diupload: uploads\p.png
+2025-08-28 14:43:03,840 - INFO -  * Detected change in 'C:\\Python312\\Lib\\encodings\\cp1252.py', reloading
+2025-08-28 14:43:03,977 - INFO -  * Detected change in 'C:\\Users\\Acer\\OneDrive\\Dokumen\\Magang\\OCR\\.venv\\Lib\\site-packages\\werkzeug\\debug\\__init__.py', reloading
+2025-08-28 14:43:03,989 - INFO -  * Detected change in 'C:\\Users\\Acer\\OneDrive\\Dokumen\\Magang\\OCR\\.venv\\Lib\\site-packages\\werkzeug\\serving.py', reloading
+2025-08-28 14:43:03,996 - INFO -  * Detected change in 'C:\\Python312\\Lib\\socketserver.py', reloading
+2025-08-28 14:43:04,004 - INFO -  * Detected change in 'C:\\Python312\\Lib\\threading.py', reloading
+2025-08-28 14:43:04,041 - ERROR - Edit config.py dan tambahkan path gambar di IMAGE_PATHS
+2025-08-28 14:43:04,043 - INFO - 127.0.0.1 - - [28/Aug/2025 14:43:04] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-08-28 14:43:04,052 - INFO - 127.0.0.1 - - [28/Aug/2025 14:43:04] "GET / HTTP/1.1" 200 -

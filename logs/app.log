@@ -1,0 +1,8 @@
+2025-09-01 14:36:55,533 - WARNING -  * Debugger is active!
+2025-09-01 14:36:55,536 - INFO -  * Debugger PIN: 833-790-636
+2025-09-01 14:36:55,581 - INFO - 127.0.0.1 - - [01/Sep/2025 14:36:55] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-09-01 14:36:55,618 - INFO - 127.0.0.1 - - [01/Sep/2025 14:36:55] "GET / HTTP/1.1" 200 -
+2025-09-01 14:37:03,412 - INFO - 127.0.0.1 - - [01/Sep/2025 14:37:03] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-09-01 14:37:03,418 - INFO - 127.0.0.1 - - [01/Sep/2025 14:37:03] "GET / HTTP/1.1" 200 -
+2025-09-01 14:37:10,332 - INFO -  * Detected change in 'C:\\Users\\Acer\\OneDrive\\Dokumen\\Magang\\OCR\\ak\\main.py', reloading
+2025-09-01 14:37:10,334 - INFO -  * Detected change in 'C:\\Users\\Acer\\OneDrive\\Dokumen\\Magang\\OCR\\ak\\main.py', reloading

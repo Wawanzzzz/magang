@@ -1,0 +1,7 @@
+2025-08-28 14:43:12,944 - WARNING -  * Debugger is active!
+2025-08-28 14:43:12,951 - INFO -  * Debugger PIN: 504-187-456
+2025-08-28 14:43:46,197 - INFO - File diupload: uploads\ktp.png
+2025-08-28 14:43:46,350 - ERROR - Edit config.py dan tambahkan path gambar di IMAGE_PATHS
+2025-08-28 14:43:46,354 - INFO - 127.0.0.1 - - [28/Aug/2025 14:43:46] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-08-28 14:43:46,377 - INFO - 127.0.0.1 - - [28/Aug/2025 14:43:46] "GET / HTTP/1.1" 200 -
+2025-08-28 14:47:31,655 - INFO -  * Detected change in 'C:\\Python312\\Lib\\pathlib.py', reloading

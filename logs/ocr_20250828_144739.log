@@ -1,0 +1,4 @@
+2025-08-28 14:47:39,509 - WARNING -  * Debugger is active!
+2025-08-28 14:47:39,540 - INFO -  * Debugger PIN: 504-187-456
+2025-08-28 14:52:01,552 - INFO - 127.0.0.1 - - [28/Aug/2025 14:52:01] "GET / HTTP/1.1" 200 -
+2025-08-28 14:52:01,554 - INFO -  * Detected change in 'C:\\Python312\\Lib\\encodings\\unicode_escape.py', reloading

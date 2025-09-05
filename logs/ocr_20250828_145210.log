@@ -1,0 +1,8 @@
+2025-08-28 14:52:10,727 - WARNING -  * Debugger is active!
+2025-08-28 14:52:10,734 - INFO -  * Debugger PIN: 504-187-456
+2025-08-28 14:52:10,867 - INFO - File diupload: uploads\p.png
+2025-08-28 14:52:11,027 - ERROR - Edit config.py dan tambahkan path gambar di IMAGE_PATHS
+2025-08-28 14:52:11,030 - INFO - 127.0.0.1 - - [28/Aug/2025 14:52:11] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-08-28 14:52:11,050 - INFO - 127.0.0.1 - - [28/Aug/2025 14:52:11] "GET / HTTP/1.1" 200 -
+2025-08-28 14:56:09,688 - INFO -  * Detected change in 'C:\\Users\\Acer\\OneDrive\\Dokumen\\Magang\\OCR\\ak\\utils\\validation.py', reloading
+2025-08-28 14:56:09,689 - INFO -  * Detected change in 'C:\\Users\\Acer\\OneDrive\\Dokumen\\Magang\\OCR\\ak\\utils\\validation.py', reloading
