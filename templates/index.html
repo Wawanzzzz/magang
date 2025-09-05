@@ -1,1 +1,278 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCR Dashboard</title>
+    <style>
+        /* Basic reset */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: radial-gradient(ellipse at center, #000000 0%, #0a0a0a 100%);
+    overflow-x: hidden;
+    overflow-y: auto; /* supaya scroll muncul bila konten panjang */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* konten horizontal center */
+    min-height: 100vh;
+    position: relative; /* untuk anak absolute seperti stars & blackhole */
+}
+
+
+        h1 {
+            margin-top: 40px;
+            font-size: 2.5rem;
+            color: #f0f0f0;
+            text-shadow: 0 0 10px rgb(1, 1, 148), 0 0 20px rgb(2, 188, 188);
+            z-index: 10;
+            position: relative;
+        }
+
+        form {
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            background-color: rgba(0,0,0,0.7);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0,0,50,0.5);
+            backdrop-filter: blur(5px);
+            position: relative;
+            z-index: 10;
+        }
+
+        input, button { 
+            margin: 10px 0; 
+            padding: 10px 15px; 
+            font-size: 16px;
+            border-radius: 6px;
+            border: none;
+        }
+
+        input {
+            background-color: #111;
+            color: #fff;
+        }
+
+        button {
+            cursor: pointer;
+            background: linear-gradient(45deg, #490149, #014141);
+            color: #fff;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px #014a4a, 0 0 25px #430143;
+        }
+
+        form, #result, .flash {
+    margin: 20px auto; /* auto horizontal */
+    max-width: 1020px;
+    text-align: left;
+}
+
+
+        /* .flash { 
+            color: #ff5555; 
+            background-color: rgba(255,0,0,0.3); 
+            padding: 10px; 
+            border-radius: 6px; 
+            width: 80%; 
+            max-width: 600px; 
+            text-align: center; 
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 10;
+        } */
+
+        img.uploaded-image {
+            max-width: 300px; 
+            margin-bottom: 10px; 
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgb(1, 1, 134), 0 0 25px rgb(1, 197, 197);
+        }
+
+        .stars, .shooting-stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* biar background cukup panjang saat scroll */
+    pointer-events: none;
+    z-index: -2;
+}
+
+
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: white;
+            border-radius: 50%;
+            animation: twinkle 2s infinite;
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 1; }
+        }
+
+        /* Blackhole center */
+        .blackhole {
+    position: fixed;
+    top: 450px; /* dari atas, bisa disesuaikan */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle, #000 0%, #000 60%, #ff00ff 100%);
+    border-radius: 50%;
+    box-shadow: 0 0 100px #ff00ffc7, 0 0 200px #ff00ff88 inset;
+    z-index: -1;
+    animation: spin 10s linear infinite;
+}
+
+
+        @keyframes spin {
+            0% { transform: translate(-50%, -50%) rotate(0deg);}
+            100% { transform: translate(-50%, -50%) rotate(360deg);}
+        }
+
+            /* Shooting stars  */
+           /* /* .shooting-stars {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: -1;
+} */
+
+.shooting-star {
+    position: absolute;
+    width: 1px; /* ketebalan awal */
+    height: 80px; /* panjang awal */
+    background: linear-gradient(225deg, #fff, rgba(255,255,255,0));
+    opacity: 0.8;
+    transform: rotate(225deg);
+    animation: shoot-left-bottom linear forwards;
+}
+
+@keyframes shoot-left-bottom {
+    0% {
+        transform: translateX(0) translateY(0) rotate(225deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-120vw) translateY(120vh) rotate(225deg);
+        opacity: 0;
+    }
+}
+    </style>
+</head>
+<body>
+    <!-- Starfield background -->
+    <div class="stars" id="stars"></div>
+    <div class="blackhole"></div>
+
+    <h1>OCR Dashboard</h1>
+
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        {% for message in messages %}
+          <div class="flash">{{ message }}</div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+
+    <form method="POST" enctype="multipart/form-data">
+        <label for="image">Pilih file gambar (max 5MB):</label>
+        <input type="file" name="image" id="image" accept="image/*" required>
+        <button type="submit">Upload & Process</button>
+    </form>
+
+    {% if result %}
+    <div id="result">
+        <h3>Hasil OCR untuk file: {{ filename }}</h3>
+
+        {% if filename.endswith(('.png','.jpg','.jpeg')) %}
+            <img src="{{ url_for('uploaded_file', filename=filename) }}" 
+                 alt="Uploaded Image" class="uploaded-image">
+        {% endif %}
+
+        <pre>{{ result }}</pre>
+
+        <div class="download-buttons">
+            <a href="{{ url_for('uploaded_file', filename=filename) }}" download="{{ filename }}">Download Gambar</a>
+            <a href="{{ url_for('download_excel') }}">Download Excel</a>
+        </div>
+    </div>
+    {% endif %}
+    <script>
+// Generate random static stars
+const starsContainer = document.getElementById('stars');
+for (let i = 0; i < 200; i++) {
+    const star = document.createElement('div');
+    star.classList.add('star');
+    star.style.top = Math.random() * document.body.scrollHeight + 'px';
+    star.style.left = Math.random() * window.innerWidth + 'px';
+    const size = Math.random() * 2 + 1; // ukuran random 1-3px
+    star.style.width = star.style.height = size + 'px';
+    star.style.animationDuration = (Math.random() * 2 + 1) + 's';
+    starsContainer.appendChild(star);
+}
+
+// Function to create shooting stars (left-bottom)
+function createShootingStar() {
+    const star = document.createElement('div');
+    star.classList.add('shooting-star');
+
+    // posisi awal acak berdasarkan tinggi scroll halaman
+    const maxHeight = document.body.scrollHeight - 100; // dikurangi agar tidak keluar
+    const maxWidth = window.innerWidth - 50; // dikurangi agar tidak keluar
+    star.style.top = Math.random() * maxHeight + 'px';
+    star.style.left = Math.random() * maxWidth + 'px';
+
+    // panjang streak acak
+    star.style.height = (Math.random() * 100 + 50) + 'px'; // 50-150px
+    // ketebalan streak acak
+    star.style.width = (Math.random() * 2 + 1) + 'px'; // 1-3px
+
+    // durasi animasi acak
+    const duration = Math.random() * 1.5 + 0.5; // 0.5s - 2s
+    star.style.animationDuration = duration + 's';
+
+    document.querySelector('.shooting-stars').appendChild(star);
+
+    // hapus bintang setelah selesai
+    setTimeout(() => {
+        star.remove();
+    }, duration * 1000);
+}
+
+// Interval acak untuk bintang jatuh supaya natural
+setInterval(() => {
+    if (Math.random() < 0.6) { // 60% chance tiap interval
+        createShootingStar();
+    }
+}, 300);
+
+// Update posisi bintang statis saat resize agar tetap menutupi seluruh area
+window.addEventListener('resize', () => {
+    document.querySelectorAll('.star').forEach(star => {
+        star.style.top = Math.random() * document.body.scrollHeight + 'px';
+        star.style.left = Math.random() * window.innerWidth + 'px';
+    });
+});
+
+    </script>
+</body>
+</html>
